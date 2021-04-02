@@ -4,10 +4,10 @@
     color: #fff;
     color: rgba(255,255,255,0.9);
 
-    &.shadow-lg {
+    &.shadow {
         -webkit-box-shadow: 0px 6px 58px -13px rgba(106,67,222,1) !important;
--moz-box-shadow: 0px 6px 58px -13px rgba(106,67,222,1) !important;
-box-shadow: 0px 6px 58px -13px rgba(106,67,222,1) !important;
+        -moz-box-shadow: 0px 6px 58px -13px rgba(106,67,222,1) !important;
+        box-shadow: 0px 6px 58px -13px rgba(106,67,222,1) !important;
 
     }
 }
@@ -19,7 +19,7 @@ box-shadow: 0px 6px 58px -13px rgba(106,67,222,1) !important;
 
     &:hover{ color: #fff; }
 
-    &.shadow-lg {
+    &.shadow {
         -webkit-box-shadow: 0px 6px 58px -13px rgba(255,160,0,1) !important;
         -moz-box-shadow: 0px 6px 58px -13px rgba(255,160,0,1) !important;
         box-shadow: 0px 6px 58px -13px rgba(255,160,0,1) !important;
@@ -33,3 +33,4 @@ box-shadow: 0px 6px 58px -13px rgba(106,67,222,1) !important;
 button {
     width: auto !important;
 }
+

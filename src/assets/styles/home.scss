@@ -1,0 +1,348 @@
+@import "../bootstrap/bootstrap.scss";
+
+@import "./commons.scss";
+
+.home_landing {
+
+    overflow-x: hidden;
+
+    .header {
+      width: 100%;
+      width: 100vw;
+      height: 100%;
+      height: 100vh;
+      background-color: #061456;
+      background-image: url("../img/site/header_bg_space.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+        
+    
+      .header_overlay {
+  
+        width: 100%;
+        width: 100vw;
+        height: 100%;
+        height: 100vh;
+        background: url("../img/site/header_bg_bottom_left.svg"), 
+                    url('../img/site/header_bg_bottom_ball.svg'),
+                    url("../img/site/header_person.svg");
+    
+        background-repeat: no-repeat;
+        background-position: left bottom, 
+                             96% 103%,
+                             center right;
+    
+        background-size: 400px 200px,
+                         80px 80px,
+                         800px 900px;
+  
+      }//end header overlay
+  
+      .header_content {
+  
+        max-width: 90% !important;
+        height: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        font-family: 'Ubuntu', sans-serif;
+
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        padding: 10px !important;
+         
+        .intro_desc {
+          font-size: 16px;
+          font-family: 'Ubuntu', sans-serif;
+          color: rgba(2255,255,255,0.6) !important;
+          line-height: 20px;
+        } 
+  
+        .header_title{
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 48px;
+          font-weight: 700;
+          color: rgba(2255,255,255,0.80) !important;
+        }
+      
+        .header_mini_bar {
+          width: 20px;
+          height: 2px !important;
+          background-color: rgba(255,255,255,0.9);
+          border-radius: 1px;
+      
+        }
+      
+        .header_slogan {
+          font-size: 12px;
+          color: rgba(255,255,255,0.9);
+          text-transform: capitalize !important;
+        }
+      
+        .binance_dot{ 
+          font-size: 60px; 
+          position: relative;
+          top: -8px;
+          display: inline-block;
+          margin-left:8px;
+          margin-right: 8px;
+          color: #e91e63;
+        }
+      
+      } // end header content
+  
+    } //end header
+  
+    .search_section {
+      width: 100%;
+      width: 100vw;
+      height: 100%;
+      height: 100vh;
+      background:  url("../img/site/home_search_bg.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      
+      .search_overlay {
+        width: 100%;
+        width: 100vw;
+        height: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(60, 52, 183,1), rgba(60, 52, 183,0.8), rgba(60, 52, 183,0.6));
+        padding-top: 80px !important;
+        //display: flex !important;
+        //flex-direction: column !important;
+        //justify-content: center !important;
+
+        .search_profile_title {
+            background:  url("../img/site/search_profile_bg2.svg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 400px;
+            height: 180px;
+            max-width: 90%;
+
+            .text {
+                position: relative;
+                top: 65px;
+                left: 85px;
+                font-size: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: rgba(255,255,255,0.8);
+                font-style: italic;
+            }
+        }
+
+        .search_bar { 
+
+            width: 90%; 
+            height: 65px;
+            margin-top: 80px !important;
+       
+            background-color: #ff9800;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(248, 152, 4,0.6), 0 0 0 10px rgba(2255,255,255,1);
+            //transform: scale(0.6);
+
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+
+            &.is_focused {
+                background-color: #dec1e3;
+
+               // box-shadow: 0 10px 40px rgba(255,255,255,0.9), 0 0 0 10px rgba(255,255,255,0.9);
+
+                .search_input{
+                    color: rgba(0,0,0,0.6);
+                }
+            }
+
+            .search_icon{
+                width: 60px;
+                height: 60px;
+                flex-grow: 0;
+                padding: 10px !important;
+                svg{ 
+                    fill: rgba(0,0,0, 0.8); 
+                    height: 45px !important; 
+                }
+            }
+
+            .search_btn {
+                flex-grow: 0 !important;
+                width:  65px !important;
+                height: 65px !important;
+                display: flex;
+                align-self: center;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+
+                background: #F53D96;
+                svg { 
+                    fill: rgba(0,0,0, 0.4) !important; 
+                    height: 40px !important;
+                    width: 100%; 
+                }
+            }
+
+            .search_input {
+
+                width: 100%; 
+                height: 62px;
+                text-align: center;
+                font-size: 30px;
+                color: rgba(255,255,255,0.6);
+                border:none;
+               
+                background: none !important;
+
+                flex-grow: 1;
+
+               &::placeholder {
+                    color: rgba(0,0,0,0.4);
+                    font-style: italic;
+                    font-weight: bold;
+                }     
+                
+                &:focus {
+                    outline: none;
+                }
+                
+            }
+        }
+
+      
+      }
+
+      .custom-shape-divider-bottom-1617135408 {
+        position: relative;
+        top:-83px;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1617135408 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 83px;
+    }
+    
+    .custom-shape-divider-bottom-1617135408 .shape-fill {
+        fill: rgb(31, 1, 87);
+    }
+
+    } //end search bar section
+
+    #footer {
+
+        min-height: 160px;
+        width: 100%;
+        width: 100vw;
+        
+
+        background-image: url("../img/site/footer_bg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        .footer_overlay {
+            background: linear-gradient(
+                            rgba(31, 1, 87,1),
+                            rgba(31, 1, 87,0.7), 
+                            rgba(31, 1, 87, 0.4)
+                        );
+            min-height: 160px;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+            color: rgba(2255,255,255,0.8);
+
+            .footer_features {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap !important;
+                //width: 1000px;
+                justify-content: center;
+                align-items: center;
+
+                .card {
+                    width: 290px;
+                    height: 390px;
+                    margin: 5px;
+                    //border-width: 2px;
+                    //flex: 1;
+                    border-right-style: outset;
+                    border-right-width: 5px;
+                    border-right-color: #eceff1;  
+                    border-radius: 40px;
+                    background: linear-gradient(#e6e6e6, #fff); //#eceff1;
+                    overflow: hidden;
+                    -webkit-box-shadow: 3px 2px 38px -15px rgba(0,0,0,0.95);
+                    -moz-box-shadow: 3px 2px 38px -15px  rgba(0,0,0,0.95);
+                    box-shadow: 3px 2px 38px -15px  rgba(0,0,0,0.95);
+                    
+                    .card-header {
+
+                        height: 180px;
+
+                        border: none !important;
+                        
+                        background-size: contain;
+                        background-repeat: no-repeat !important;
+                        position: relative;
+                        top: -5px;                        
+
+                        .icon {
+                          fill: rgba(255,255,255,0.8);
+                          height: 72px;
+                          margin: 0 auto;
+                          margin-top: 30px;
+                        }
+                    }
+
+                    &.bg_bsc_name_service .card-header{
+                        background: url("../img/site/bg_bsc_name_service.svg");
+                    }
+
+                    &.bg_micro_blogging .card-header {
+                      background: url("../img/site/bg_micro_blogging.svg");
+                    }
+
+                    &.bg_nft_marketplace .card-header {
+                      background: url("../img/site/bg_nft_marketplace.svg");
+                    }
+                    
+                    .card-body {
+                        border: none !important;
+                        .card-title {
+                          font-size: 20px;
+                          color: #455a64;
+                          font-weight: normal !important;
+                           font-family: 'Ubuntu', sans-serif;
+                           text-transform: capitalize !important;
+                        }
+
+                        .card-content {
+                          font-size: 16px;
+                          font-family: 'Ubuntu', sans-serif;
+                          line-height: 30px;
+                          color: #546e7a;
+                        }
+                    }
+                }
+            }
+        }
+
+       
+    } //end footer
+  }
