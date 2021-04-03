@@ -2,6 +2,11 @@
 
 @import "./commons.scss";
 
+* { font-family: 'Ubuntu', sans-serif !important; }
+
+html, body {
+  font-family: 'Ubuntu', sans-serif !important;
+}
 
 .brand-logo {
   width: 60px;
@@ -115,7 +120,7 @@
         .intro_desc {
           font-size: 16px;
           font-family: 'Ubuntu', sans-serif;
-          color: rgba(2255s,255,255,0.6) !important;
+          color: rgba(2255,255,255,0.6) !important;
           line-height: 20px;
         } 
   
