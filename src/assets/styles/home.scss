@@ -2,6 +2,18 @@
 
 @import "./commons.scss";
 
+
+.brand-logo {
+  width: 60px;
+  height: 40px;
+}
+
+.home {
+  .brand-logo {
+      fill: rgba(255,255,255,0.9);
+  }
+}
+
 .home_landing {
 
     overflow-x: hidden;
@@ -15,7 +27,6 @@
       background-image: url("../img/site/header_bg_space.svg");
       background-repeat: no-repeat;
       background-size: cover;
-        
     
       .header_overlay {
   
@@ -23,6 +34,7 @@
         width: 100vw;
         height: 100%;
         height: 100vh;
+        
         background: url("../img/site/header_bg_bottom_left.svg"), 
                     url('../img/site/header_bg_bottom_ball.svg'),
                     url("../img/site/header_person.svg");
@@ -35,9 +47,54 @@
         background-size: 400px 200px,
                          80px 80px,
                          800px 900px;
-  
+
+
+        @media (screen and max-width: 1160px) {
+
+            background: url("../img/site/header_bg_bottom_left.svg"), 
+                        url('../img/site/header_bg_bottom_ball.svg');
+
+             background-repeat: no-repeat;
+
+             background-position: left bottom, 
+                                  96% 103%;
+
+             background-size:   400px 200px,
+                                 80px 80px;
+        }
+
+
+        ._navbar {
+
+            background: rgba(0,0,0,0.1) !important;
+            padding: 10px;
+            
+            //border: 2px solid red;
+
+            .nav_links a {
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+
+            .brand-logo { 
+              
+              position: relative; 
+              top: 5px;
+
+              path {
+                fill: rgba(255,255,255, 0.9) !important;
+              }
+
+              stroke: rgba(255,255,255, 0.9) !important; 
+              
+              height: 40px !important;  
+              width:  50px; 
+            }
+        }
+      
       }//end header overlay
-  
+
+
       .header_content {
   
         max-width: 90% !important;
@@ -51,7 +108,9 @@
 
         margin-left: 5% !important;
         margin-right: 5% !important;
-        padding: 10px !important;
+        padding: 10px;
+        position: relative;
+        top: -120px;
          
         .intro_desc {
           font-size: 16px;

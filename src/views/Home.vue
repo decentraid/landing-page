@@ -1,9 +1,22 @@
 <template>
-    <SiteLayout>
+    <SiteLayout class="home">
       <div class="home_landing" id="fullpage_container">
-        
+    
         <div class="header" data-anchor="Header">
           <div class="header_overlay">
+
+            <nav class="_navbar d-flex flex-row justify-content-between px-3 align-items-center">
+              <div>
+                <a class="navbar-brand" href="/">
+                  <svg-img src="/assets/img/site/logo_black.svg" class="brand-logo"  />
+                </a>
+              </div>
+              <div class="d-flex flex-row nav_links">
+                <a href="#search_name" class="text-white">{{$t("search_name")}}</a>
+                <a href="#features" class="text-white">{{$t("features")}}</a>
+              </div>
+            </nav>
+
             <div class="header_content">
               
               <div class="header_mini_bar my-2 mb-3"></div>
@@ -18,15 +31,20 @@
               <p class="py-3 intro_desc">
                 {{$t("header_dapp_desc")}}
               </p>
-              <div class="py-3 d-flex flex-row">
-                <div class="px-1">
-                  <a href="#" class="px-4 btn btn-purple rounded-pill inline-block f-ubuntu shadow btn-lg">
-                    {{$t("read_litepaper")}}
+              <div class="py-3 d-flex flex-sm-row flex-column">
+                <div class="p-1">
+                  <a href="#" class="px-4 btn btn-purple btn-block rounded-pill inline-block f-ubuntu shadow">
+                    {{$t("litepaper")}}
                   </a>
                 </div>
-                <div class="px-1">
-                  <a href="#" class="px-4 btn btn-yellow  rounded-pill inline-block f-ubuntu shadow btn-lg">
-                    {{$t("watch_video")}}
+                <div class="p-1">
+                  <a href="#" class="px-4 btn btn-yellow btn-block  rounded-pill inline-block f-ubuntu shadow">
+                    {{$t("intro_video")}}
+                  </a>
+                </div>
+                 <div class="p-1">
+                  <a href="#" class="px-4 btn btn-pink btn-block  rounded-pill inline-block f-ubuntu shadow">
+                    {{$t("launch_app")}}
                   </a>
                 </div>
               </div>
@@ -35,7 +53,7 @@
           </div> <!-- end header overlay -->
         </div> <!-- end header -->
 
-        <div  class="search_section" data-anchor="Search">
+        <div id="search_name"  class="search_section" data-anchor="Search">
             <div class="search_overlay">
               <div class="container">
                  <div class="search_profile_title">
@@ -78,7 +96,7 @@
           
           <div class="footer_overlay py-5">
 
-            <div class="my-5">
+            <div class="my-5" id="features">
               <HomeFeatures />
             </div>
             <div class="my-2">

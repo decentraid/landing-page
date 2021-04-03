@@ -2,8 +2,8 @@
 export default {
    "tokenize_yourself": "Tokenize Yourself",
    "header_dapp_desc": "A decentralized NFT based social profile & identity protocol for dapps on Binance Smart Chain",
-   "read_litepaper": "Read Lite Paper",
-   "watch_video": "Watch Video",
+   "litepaper": "Lite Paper",
+   "intro_video": "Intro. Video",
    "search": "Search",
    "name": "Name",
    "type_here": "Type Here..",
@@ -13,5 +13,8 @@ export default {
    "micro_blogging": "Micro Blogging",
    "bsc_name_service_desc": "Binance Smart Chain name service maps your address to a human readable & friendly format",
    "nft_marketplace_desc": "Buy, Sell & Auction NFTs (Non-Fungible Tokens) directly from your BSC compatible wallet",
-   "micro_blogging_desc": "Follow, like & write about your favourite  status updates using our censorship free platform"
+   "micro_blogging_desc": "Follow, like & write about your favourite  status updates using our censorship free platform",
+   "launch_app": "Launch App",
+   "search_name": "Search Name",
+   "features": "Features"
 } 
